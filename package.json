@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha tests/*"
+    "unit-tests": "npx mocha tests/*",
+    "unit-tests-with-coverage": "npx nyc --reporter=html --reporter=text mocha tests/*"
   },
   "author": "RV",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "chai": "^4.2.0",
